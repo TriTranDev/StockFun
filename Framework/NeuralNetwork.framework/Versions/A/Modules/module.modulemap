@@ -1,0 +1,8 @@
+framework module "NeuralNetwork" {
+	header "ref.h"
+    header "NeuralNetwork.objc.h"
+    header "Universe.objc.h"
+    header "NeuralNetwork.h"
+
+    export *
+}
