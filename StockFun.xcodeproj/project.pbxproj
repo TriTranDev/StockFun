@@ -13,19 +13,22 @@
 		CA434DDF2449845100E267EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA434DDE2449845100E267EF /* Assets.xcassets */; };
 		CA434DE22449845100E267EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA434DE02449845100E267EF /* LaunchScreen.storyboard */; };
 		CA434DEC244985F100E267EF /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA434DEB244985F100E267EF /* Setting.storyboard */; };
-		CA434DF3244989FA00E267EF /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA434DF0244989F200E267EF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA434DF624498A8500E267EF /* Process.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA434DF524498A8500E267EF /* Process.storyboard */; };
 		CA434DF824498A9200E267EF /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA434DF724498A9200E267EF /* Chart.storyboard */; };
 		CA434E022449B14700E267EF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA434DFD2449B13F00E267EF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA434E042449B14700E267EF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA434DFE2449B14000E267EF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CABCFE36245EAD6E0027553E /* NeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABCFE35245EAD6E0027553E /* NeuralNetwork.framework */; };
+		CA5C18FF24659F49003BAD1F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C18F924659D29003BAD1F /* SnapKit.framework */; };
+		CA5C190024659F49003BAD1F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C18F924659D29003BAD1F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA5C190124659F4B003BAD1F /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C18FB24659DE8003BAD1F /* SwiftCSV.framework */; };
+		CA5C190224659F4B003BAD1F /* SwiftCSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA5C18FB24659DE8003BAD1F /* SwiftCSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAB216C0246C247F0023A43B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB216BF246C247F0023A43B /* Model.swift */; };
 		CAD3D8A0245D18B80090C7C0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D89F245D18B80090C7C0 /* SettingViewController.swift */; };
 		CAD3D8A2245D1A620090C7C0 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D8A1245D1A620090C7C0 /* SettingViewModel.swift */; };
 		CAD3D8A5245D1A850090C7C0 /* SettingViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D8A4245D1A850090C7C0 /* SettingViewDatasource.swift */; };
 		CAD3D8A8245D48FE0090C7C0 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D8A7245D48FE0090C7C0 /* ProcessViewController.swift */; };
 		CAD3D8AA245D49230090C7C0 /* ProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D8A9245D49230090C7C0 /* ProcessViewModel.swift */; };
 		CAD3D8AC245D49330090C7C0 /* ProcessViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3D8AB245D49330090C7C0 /* ProcessViewDatasource.swift */; };
-		CAD3D8B2245D5CA10090C7C0 /* SwiftCSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAD3D8AF245D5C990090C7C0 /* SwiftCSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAEC92E72465ABCA00174387 /* Neuralnetworkmobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEC92E62465ABC900174387 /* Neuralnetworkmobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,10 +38,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CA5C190224659F4B003BAD1F /* SwiftCSV.framework in Embed Frameworks */,
 				CA434E022449B14700E267EF /* Realm.framework in Embed Frameworks */,
-				CA434DF3244989FA00E267EF /* SnapKit.framework in Embed Frameworks */,
 				CA434E042449B14700E267EF /* RealmSwift.framework in Embed Frameworks */,
-				CAD3D8B2245D5CA10090C7C0 /* SwiftCSV.framework in Embed Frameworks */,
+				CA5C190024659F49003BAD1F /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,19 +57,20 @@
 		CA434DE12449845100E267EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA434DE32449845100E267EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA434DEB244985F100E267EF /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		CA434DF0244989F200E267EF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		CA434DF524498A8500E267EF /* Process.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Process.storyboard; sourceTree = "<group>"; };
 		CA434DF724498A9200E267EF /* Chart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.storyboard; sourceTree = "<group>"; };
 		CA434DFD2449B13F00E267EF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		CA434DFE2449B14000E267EF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		CABCFE35245EAD6E0027553E /* NeuralNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeuralNetwork.framework; sourceTree = "<group>"; };
+		CA5C18F924659D29003BAD1F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		CA5C18FB24659DE8003BAD1F /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = "<group>"; };
+		CAB216BF246C247F0023A43B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CAD3D89F245D18B80090C7C0 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		CAD3D8A1245D1A620090C7C0 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		CAD3D8A4245D1A850090C7C0 /* SettingViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewDatasource.swift; sourceTree = "<group>"; };
 		CAD3D8A7245D48FE0090C7C0 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		CAD3D8A9245D49230090C7C0 /* ProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewModel.swift; sourceTree = "<group>"; };
 		CAD3D8AB245D49330090C7C0 /* ProcessViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewDatasource.swift; sourceTree = "<group>"; };
-		CAD3D8AF245D5C990090C7C0 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = "<group>"; };
+		CAEC92E62465ABC900174387 /* Neuralnetworkmobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Neuralnetworkmobile.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CABCFE36245EAD6E0027553E /* NeuralNetwork.framework in Frameworks */,
+				CA5C18FF24659F49003BAD1F /* SnapKit.framework in Frameworks */,
+				CA5C190124659F4B003BAD1F /* SwiftCSV.framework in Frameworks */,
+				CAEC92E72465ABCA00174387 /* Neuralnetworkmobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +114,7 @@
 				CA434DE02449845100E267EF /* LaunchScreen.storyboard */,
 				CA434DE32449845100E267EF /* Info.plist */,
 				CA434DFC2449A56D00E267EF /* View */,
+				CAB216C1246C24840023A43B /* Model */,
 			);
 			path = StockFun;
 			sourceTree = "<group>";
@@ -115,11 +122,11 @@
 		CA434DEF244989CB00E267EF /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				CABCFE35245EAD6E0027553E /* NeuralNetwork.framework */,
-				CAD3D8AF245D5C990090C7C0 /* SwiftCSV.framework */,
+				CAEC92E62465ABC900174387 /* Neuralnetworkmobile.framework */,
+				CA5C18FB24659DE8003BAD1F /* SwiftCSV.framework */,
+				CA5C18F924659D29003BAD1F /* SnapKit.framework */,
 				CA434DFD2449B13F00E267EF /* Realm.framework */,
 				CA434DFE2449B14000E267EF /* RealmSwift.framework */,
-				CA434DF0244989F200E267EF /* SnapKit.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -129,7 +136,7 @@
 			children = (
 				CA434DEB244985F100E267EF /* Setting.storyboard */,
 				CAD3D89F245D18B80090C7C0 /* SettingViewController.swift */,
-				CAD3D8A3245D1A6A0090C7C0 /* Model */,
+				CAD3D8A3245D1A6A0090C7C0 /* ViewModel */,
 				CAD3D8A6245D1A890090C7C0 /* Datasource */,
 			);
 			path = Setting;
@@ -140,7 +147,7 @@
 			children = (
 				CA434DF524498A8500E267EF /* Process.storyboard */,
 				CAD3D8A7245D48FE0090C7C0 /* ProcessViewController.swift */,
-				CAD3D8AD245D49370090C7C0 /* Model */,
+				CAD3D8AD245D49370090C7C0 /* ViewModel */,
 				CAD3D8AE245D493D0090C7C0 /* Datasource */,
 			);
 			path = Process;
@@ -164,12 +171,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CAD3D8A3245D1A6A0090C7C0 /* Model */ = {
+		CAB216C1246C24840023A43B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAB216BF246C247F0023A43B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAD3D8A3245D1A6A0090C7C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CAD3D8A1245D1A620090C7C0 /* SettingViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CAD3D8A6245D1A890090C7C0 /* Datasource */ = {
@@ -180,12 +195,12 @@
 			path = Datasource;
 			sourceTree = "<group>";
 		};
-		CAD3D8AD245D49370090C7C0 /* Model */ = {
+		CAD3D8AD245D49370090C7C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CAD3D8A9245D49230090C7C0 /* ProcessViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CAD3D8AE245D493D0090C7C0 /* Datasource */ = {
@@ -271,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB216C0246C247F0023A43B /* Model.swift in Sources */,
 				CA434DDA2449844F00E267EF /* ViewController.swift in Sources */,
 				CAD3D8A5245D1A850090C7C0 /* SettingViewDatasource.swift in Sources */,
 				CAD3D8AA245D49230090C7C0 /* ProcessViewModel.swift in Sources */,
@@ -436,7 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = universal.StockFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = universal.StockFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

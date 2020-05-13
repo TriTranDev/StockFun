@@ -107,13 +107,13 @@ class ViewController: BaseViewController {
     }
     
     private func addSubViewControllerToSelf(_ VC: UIViewController) {
-        VC.willMove(toParent: self)
+        VC.willMove(toParentViewController: self)
         self.containerView.addSubview(VC.view)
         VC.view.snp.makeConstraints { (make) in
             make.top.left.right.bottom.equalToSuperview()
         }
-        self.addChild(VC)
-        VC.didMove(toParent: self)
+        self.addChildViewController(VC)
+        VC.didMove(toParentViewController: self)
     }
     
     private func removeSubViewContainer() {
